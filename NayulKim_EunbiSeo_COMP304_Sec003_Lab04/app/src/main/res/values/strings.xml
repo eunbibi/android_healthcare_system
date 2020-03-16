@@ -11,6 +11,7 @@
     <string name="patient_id">Patient ID</string>
     <string name="bph">BPM</string>
     <string name="temprature">Temprature</string>
+    <string name="ptemprature">Patient Temprature</string>
     <string name="body_temprature">Body Temprature</string>
     <string name="add_test">Add Test</string>
     <string name="bpl">BPL</string>

@@ -8,16 +8,20 @@
     android:orientation="vertical"
     tools:context=".Views.PatientActivity">
 
-    <Button
-        android:id="@+id/btn_AddPatient"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FCA3A3"
-        android:onClick="AddPatient"
-        android:text="@string/add_new_patient" />
 
     <ListView
         android:id="@+id/lV_patientList"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_AddPatient"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:backgroundTint="#216ad3"
+        android:onClick="AddPatient"
+        android:text="@string/add_new_patient"
+        android:textColor="#ffffff"/>
 </LinearLayout>

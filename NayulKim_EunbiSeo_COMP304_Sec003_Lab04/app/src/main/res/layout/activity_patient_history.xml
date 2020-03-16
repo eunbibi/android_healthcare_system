@@ -16,7 +16,7 @@
         android:padding="15dp"
         android:text="Patient Information"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#00C853"
+        android:textColor="#1957b0"
         android:textStyle="bold" />
 
     <Space
@@ -39,6 +39,8 @@
             android:id="@+id/tV_FirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16dp"
             android:text="TextView" />
 
         <Space
@@ -64,6 +66,8 @@
             android:id="@+id/tV_LastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16dp"
             android:text="Patient Last Name" />
 
         <Space
@@ -88,6 +92,8 @@
             android:id="@+id/tV_Department"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16dp"
             android:text="Department Number" />
 
         <Space
@@ -103,16 +109,20 @@
 
         <EditText
             android:id="@+id/et_Room"
-            android:layout_width="wrap_content"
+            android:layout_width="131dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="16dp"
             android:text="Room Number: " />
 
         <TextView
             android:id="@+id/tV_Room"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16dp"
             android:text="Room Number" />
 
         <Space
@@ -152,7 +162,8 @@
             android:id="@+id/btn_addTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EC9E9E"
+            android:backgroundTint="#216ad3"
+            android:textColor="#ffffff"
             android:onClick="addTest"
             android:text="@string/add_test" />
 
@@ -165,7 +176,7 @@
             android:padding="15dp"
             android:text="Test Information"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#00C853"
+            android:textColor="#1957b0"
             android:textStyle="bold" />
 
         <ListView

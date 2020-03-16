@@ -47,7 +47,8 @@
         android:id="@+id/btnEditPatient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F89797"
+        android:backgroundTint="#216ad3"
+        android:textColor="#ffffff"
         android:onClick="savePatient"
         android:text="@string/save_patient" />
 
