@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='NayulKim_EunbiSeo_COMP304_Sec003_Lab04'
