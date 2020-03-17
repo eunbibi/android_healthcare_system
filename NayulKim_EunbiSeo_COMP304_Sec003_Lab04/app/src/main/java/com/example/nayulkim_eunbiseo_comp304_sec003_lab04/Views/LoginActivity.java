@@ -21,7 +21,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText nursePassword;
     private NurseViewModel nurseViewModel;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,21 +38,32 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void signIn(View view){
-        if(nurseViewModel.checkLogin(Integer.valueOf(nurseId.getText().toString()), nursePassword.getText().toString()))
-        {
-            // for editing nurse id
-            SharedPreferences sharedPreferences= getSharedPreferences("NurseID",MODE_PRIVATE);
-            SharedPreferences.Editor editor =sharedPreferences.edit();
-            editor.putString("NurseID", nurseId.getText().toString());
-            editor.commit();
+        String nId = nurseId.getText().toString();
+        String nPw = nursePassword.getText().toString();
 
-            Intent intent=new Intent(this,PatientActivity.class);
-            startActivity(intent);
-
+        //login null check
+        if(nId.matches("") || nPw.matches("")){
+            Toast.makeText(this,"Enter your ID and Password",Toast.LENGTH_LONG).show();
         }
-        else
-        {
-            Toast.makeText(this,"Your record does not exist",Toast.LENGTH_LONG).show();
+        else{
+            if(nurseViewModel.checkLogin(Integer.valueOf(nurseId.getText().toString()), nursePassword.getText().toString())){
+                try {
+                    // for editing nurse id
+                    SharedPreferences sharedPreferences = getSharedPreferences("NurseID", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("NurseID", nurseId.getText().toString());
+                    editor.commit();
+
+                    Intent intent = new Intent(this, PatientActivity.class);
+                    startActivity(intent);
+                }
+                catch (Exception ex){
+                    Toast.makeText(this,"EXCEPTION ERROR: "+ ex.getMessage(), Toast.LENGTH_LONG).show();
+                }
+            }
+            else {
+                Toast.makeText(this,"Your ID or Password is wrong",Toast.LENGTH_LONG).show();
+            }
         }
     }
     public void registerNurse(View view){

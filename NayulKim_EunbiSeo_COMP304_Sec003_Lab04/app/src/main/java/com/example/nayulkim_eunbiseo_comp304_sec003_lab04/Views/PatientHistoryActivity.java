@@ -29,8 +29,8 @@ public class PatientHistoryActivity extends AppCompatActivity {
     private Patient actualPatient;
     private TestViewModel testViewModel;
 
-    private TextView tvFirstName,tvLastName, tvDepartmentID,tvRoom;
-    private EditText et_FirstName,et_LastName, et_DepartmentID,et_Room;
+    private TextView  tvFirstName,tvLastName, tvDepartmentID,tvRoom;
+    private EditText  et_FirstName,et_LastName, et_DepartmentID,et_Room;
     private List<Test> testList;
     private ListView testListView;
 
@@ -42,8 +42,6 @@ public class PatientHistoryActivity extends AppCompatActivity {
 
         patientViewModel = ViewModelProviders.of(this).get(PatientViewModel.class);
         patientId = getIntent().getIntExtra("patientId", 0);
-
-
         actualPatient = patientViewModel.getPatientById(patientId);
 
         et_FirstName = findViewById(R.id.et_FirstName);
@@ -59,14 +57,13 @@ public class PatientHistoryActivity extends AppCompatActivity {
 
         tvDepartmentID = findViewById(R.id.tV_Department);
         tvDepartmentID.setText(actualPatient.getDepartment());
-          tvRoom = findViewById(R.id.tV_Room);
-           tvRoom.setText(String.valueOf(actualPatient.getRoom()));
+        tvRoom = findViewById(R.id.tV_Room);
+        tvRoom.setText(String.valueOf(actualPatient.getRoom()));
 
         testViewModel = ViewModelProviders.of(this).get(TestViewModel.class);
         testList = testViewModel.getTestsByPatientId(patientId);
 
-        ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_2, android.R.id.text1, testList)
-        {
+        ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_2, android.R.id.text1, testList) {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
@@ -106,22 +103,18 @@ public class PatientHistoryActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ViewTestInfoActivity.class);
         intent.putExtra("patientId", patientId);
         startActivity(intent);
-
-
-    } public void deletePatient(View view){
-
+    }
+    public void deletePatient(View view){
         patientViewModel.delete(actualPatient);
         Intent intent = new Intent(this,PatientActivity.class);
         startActivity(intent);
         finish();
     }
+
     public void editPatient(View view){
-        Log.i("Patient", "Entered in editPatient method and patinetId is "+ String.valueOf(patientId));
+        Log.i("Patient", "Entered in edit Patient method and patinet Id is "+ String.valueOf(patientId));
         Intent intent = new Intent(this,PatientEditActivity.class);
         intent.putExtra("patientId", patientId);
         startActivity(intent);
-
-
     }
-
 }

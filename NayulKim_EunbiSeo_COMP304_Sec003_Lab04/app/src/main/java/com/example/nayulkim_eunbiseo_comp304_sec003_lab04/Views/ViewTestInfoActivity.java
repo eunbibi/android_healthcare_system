@@ -31,8 +31,8 @@ public class ViewTestInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_test_info);
         et_BPL=findViewById(R.id.et_BPL);
         et_BML= findViewById(R.id.et_BPM);
-        et_Temprature= findViewById(R.id.et_Temprature);
-        et_BAuscutation= findViewById(R.id.et_Auscutation);
+        et_Temprature= findViewById(R.id.et_Temperature);
+        et_BAuscutation= findViewById(R.id.et_Auscultation);
         et_BInspection= findViewById(R.id.et_BInspection);
         testViewModel= ViewModelProviders.of(this).get(TestViewModel.class);
 

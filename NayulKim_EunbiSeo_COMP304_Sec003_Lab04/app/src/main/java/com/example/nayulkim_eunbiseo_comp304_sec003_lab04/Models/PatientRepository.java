@@ -8,6 +8,7 @@ import java.util.List;
 
 public class PatientRepository {
     private PatientDao patientDao;
+    //private TestDao testDao;
     private List<Patient> allPatients;
 
     public PatientRepository(Context context) {
@@ -38,6 +39,7 @@ public class PatientRepository {
         new Thread(new Runnable() {
             @Override
             public void run() {
+             //   testDao.delete();
                 patientDao.delete(patient);
             }
         }).start();

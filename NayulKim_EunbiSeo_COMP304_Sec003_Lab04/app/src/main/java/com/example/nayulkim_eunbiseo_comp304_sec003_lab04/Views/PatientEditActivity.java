@@ -46,12 +46,9 @@ public class PatientEditActivity extends AppCompatActivity {
         etdepartment.setText(patient.getDepartment());
         etroom.setText(String.valueOf(patient.getRoom()));
        // etnurseId.setText(patient.getNurseId());
-
-
     }
 
-    public void savePatient(View view)
-    {
+    public void savePatient(View view) {
         patient.setFirstName(etfirstName.getText().toString());
         patient.setLastname(etlastName.getText().toString());
         patient.setDepartment(etdepartment.getText().toString());
@@ -66,5 +63,4 @@ public class PatientEditActivity extends AppCompatActivity {
         intent.putExtra("patientId", patient.getPatientId());
         startActivity(intent);
     }
-
 }

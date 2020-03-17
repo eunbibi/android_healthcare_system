@@ -1,6 +1,7 @@
 package com.example.nayulkim_eunbiseo_comp304_sec003_lab04.ViewModels;
 
 import android.app.Application;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
@@ -13,6 +14,7 @@ import java.util.List;
 public class NurseViewModel extends AndroidViewModel {
 
     private NurseRepository nurseRepository;
+
     private LiveData<List<Nurse>> allNurses;
 
 

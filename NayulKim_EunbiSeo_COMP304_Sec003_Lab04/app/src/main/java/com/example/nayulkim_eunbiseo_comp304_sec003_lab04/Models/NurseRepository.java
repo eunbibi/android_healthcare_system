@@ -51,7 +51,7 @@ public class NurseRepository {
     }
 
 
-    public LiveData<List<Nurse>>allNurses(){
+    public LiveData<List<Nurse>> allNurses(){
         return allNurses;
     }
 

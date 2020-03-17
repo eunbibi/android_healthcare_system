@@ -75,7 +75,7 @@
             android:id="@+id/etpatientRoom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Room"
+            android:hint="Room(Number)"
             android:textColorHint="#216ad3"
             android:layout_marginBottom="25dp"
             android:layout_marginLeft="25dp"

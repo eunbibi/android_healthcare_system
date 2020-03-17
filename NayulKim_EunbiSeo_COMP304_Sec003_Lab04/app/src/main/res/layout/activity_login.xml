@@ -11,6 +11,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_marginTop="30dp"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="110dp"
         android:layout_marginBottom="40dp"
@@ -40,7 +41,7 @@
             android:layout_weight="0.5"
             android:backgroundTint="#1957b0"
             android:ems="10"
-            android:hint="Nurse ID"
+            android:hint="Nurse ID (Number)"
             android:inputType="textPersonName" />
     </LinearLayout>
 

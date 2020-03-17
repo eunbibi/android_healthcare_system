@@ -32,11 +32,4 @@ public abstract class AppDB extends RoomDatabase {
         }
         return instance;
     }
-
-
-
-
-
-
-
 }

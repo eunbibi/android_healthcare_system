@@ -152,7 +152,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Patient Temprature: " />
+                android:text="Patient Temperature: " />
 
             <TextView
                 android:id="@+id/tV_Patient_Temp"
@@ -176,13 +176,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Auscultation:" />
+                android:text="Notes:" />
 
             <TextView
                 android:id="@+id/tV_Patient_Aus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Auscultation" />
+                android:text="Notes" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -202,13 +202,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Body Inspection:" />
+                android:text="Alerts:" />
 
             <TextView
                 android:id="@+id/tV_Patient_BInsepection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Body Inspection" />
+                android:text="Alerts" />
 
             <Space
                 android:layout_width="wrap_content"

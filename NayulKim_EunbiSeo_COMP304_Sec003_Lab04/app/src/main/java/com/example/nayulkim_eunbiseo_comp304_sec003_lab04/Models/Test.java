@@ -6,17 +6,15 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 @Entity(foreignKeys = {@ForeignKey(entity=Patient.class,
-                        parentColumns="patientId",
-                        childColumns = "patientId"),
+        parentColumns="patientId",
+        childColumns = "patientId"),
 
 
-                        @ForeignKey(entity=Nurse.class,
-                                parentColumns="nurseId",
-                                childColumns = "nurseId")
-        },
+        @ForeignKey(entity=Nurse.class,
+                parentColumns="nurseId",
+                childColumns = "nurseId")
+},
         indices={@Index("patientId"),@Index("nurseId")})
-
-
 
 public class Test {
     @PrimaryKey(autoGenerate = true)

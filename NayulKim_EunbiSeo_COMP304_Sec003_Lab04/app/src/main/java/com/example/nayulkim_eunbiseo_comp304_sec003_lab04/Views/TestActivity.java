@@ -75,8 +75,8 @@ public class TestActivity extends AppCompatActivity {
     }
 
     public void addnewTest(View view) {
-       // Intent intent = new Intent(this, PatientAddActivity.class);
-      //  startActivity(intent);
+        // Intent intent = new Intent(this, PatientAddActivity.class);
+        //  startActivity(intent);
 
     }
 }

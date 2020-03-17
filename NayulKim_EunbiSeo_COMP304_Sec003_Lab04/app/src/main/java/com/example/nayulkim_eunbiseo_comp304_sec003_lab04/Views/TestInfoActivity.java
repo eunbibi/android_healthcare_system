@@ -58,17 +58,10 @@ public class TestInfoActivity extends AppCompatActivity {
 
     }
 
-    public void deleteTest(View view)
-    {
+    public void deleteTest(View view){
         testViewModel.delete(testObj);
         Intent intent=new Intent(this,PatientHistoryActivity.class);
         intent.putExtra("patientId", testObj.getPatientId());
         startActivity(intent);
     }
-
-
-
-
-
-
 }

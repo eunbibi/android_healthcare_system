@@ -41,11 +41,9 @@ public class PatientActivity extends AppCompatActivity {
 //            }
 //        });
 
-
         patientList = patientViewModel.allPatients();
 
-        ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_2, android.R.id.text1, patientList)
-        {
+        ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_2, android.R.id.text1, patientList) {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
@@ -58,9 +56,7 @@ public class PatientActivity extends AppCompatActivity {
                 patientInfo.setText("Department: "+patientList.get(position).getDepartment()+" - Room: "+patientList.get(position).getRoom()+" - NurseId: "+patientList.get(position).getNurseId());
 
                 return view;
-
             }
-
         };
 
 
@@ -79,19 +75,11 @@ public class PatientActivity extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(), "Patient ID is: "+str[0], Toast.LENGTH_LONG).show();
             }
         });
-
-       //
-
-
-
     }
 
-    public void AddPatient(View view)
-    {
+    public void AddPatient(View view) {
         Intent intent = new Intent(this, PatientAddActivity.class);
 
         startActivity(intent);
-
     }
-
 }

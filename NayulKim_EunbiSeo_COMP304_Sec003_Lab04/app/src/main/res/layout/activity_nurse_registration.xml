@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nurse ID"
+        android:hint="Nurse ID(Number)"
         android:inputType="textPersonName"
         android:layout_marginBottom="25dp"
         android:layout_marginLeft="25dp"
@@ -119,14 +119,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#1957b0"
-        android:text="Department ID" />
+        android:text="Department" />
 
     <EditText
         android:id="@+id/departmentEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Department ID"
+        android:hint="Department"
         android:inputType="textPersonName"
         android:layout_marginBottom="25dp"
         android:layout_marginLeft="25dp"

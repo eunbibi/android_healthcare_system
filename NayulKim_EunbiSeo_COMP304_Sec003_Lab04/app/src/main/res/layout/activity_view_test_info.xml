@@ -25,7 +25,7 @@
             android:layout_width="283dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Test Registeration"
+            android:text="Test Registration"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#1957b0" />
     </LinearLayout>
@@ -83,7 +83,7 @@
             android:textColor="#000000" />
 
         <EditText
-            android:id="@+id/et_Temprature"
+            android:id="@+id/et_Temperature"
             android:layout_width="60dp"
             android:layout_height="wrap_content" />
 
@@ -99,22 +99,22 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Auscutation:"
+            android:text="Notes:"
             android:textColor="#1957b0"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/et_Auscutation"
+            android:id="@+id/et_Auscultation"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:hint="Body Auscutation"
+            android:hint="Patient Notes"
             android:inputType="textMultiLine" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Body Inpections:"
+            android:text="Alerts:"
             android:textColor="#1957b0"
             android:textStyle="bold" />
 
@@ -122,7 +122,7 @@
             android:id="@+id/et_BInspection"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:hint="@string/body_inspection"
+            android:hint="@string/pAlerts"
             android:inputType="textMultiLine" />
     </LinearLayout>
     <LinearLayout
